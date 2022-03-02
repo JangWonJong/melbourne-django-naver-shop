@@ -1,7 +1,7 @@
 import random
 def main():
     while 1:
-        menu = input('0.Exit 1. 계산기 (+, - ,* ,/) 2.BMI 3.성적표 4.? 5.주사위 6.Q5 7.Q6')
+        menu = input('0.Exit 1. 계산기 (+, - ,* ,/) 2.BMI 3.성적표 4.? 5.주사위 6.Q5 7.Q6 8.가위바위보')
         if menu == 0:
             break
         elif menu == '1':  # 계산기
@@ -31,11 +31,12 @@ def main():
             q6 = None
         elif menu == '7':
             q7 = Quiz07RandomChoice()
-            print(f'random : {q7.chooseMember()}')
+            print(f'당첨 : {q7.chooseMember()}')
 
         elif menu =='8':
-            q8 = Quiz08Rps(1) # 가위 1 바위 2 보 3
-            print(q8.game())
+            q8 = Quiz08Rps((input('가위바위보'))) # 가위 1 바위 2 보 3
+            print(f'나의 값 : {q8.user} 컴퓨터의 값 : {q8.com} 결과 : {q8.game()}')
+
 
 class Quiz01Calculator(object):
 
@@ -167,10 +168,10 @@ class Quiz08Rps(object):
                 res = f'플레이어:{rps[2]}, 컴퓨터{rps[1]}, 결과 승리'
             elif c == 3:
                 res = f'플레이어:{rps[2]}, 컴퓨터{rps[2]}, 결과 무승부'
-        else:
-                res = '1~3입력'
 
-        return res
+            return res
+
+
 
 
 class Quiz09GetPrime(object):
