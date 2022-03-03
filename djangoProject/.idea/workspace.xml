@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f1ecfe7-2272-4317-8836-b9cbd06806df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hello/domains.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello/models.py" afterDir="false" />
+    <list default="true" id="1136610d-1a84-4313-9e98-b3ac84608b1f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../my-django/hello/domains.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-django/hello/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../my-django/hello/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-django/hello/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../my-django/hello/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,10 +14,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="25jXqZZkQcHmg146TRZE7GJ32bh" />
+  <component name="ProjectId" id="25rPr1gg5iVYtkhViLsPXehOfhs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,8 +27,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration name="my-django" type="Python.DjangoServer" factoryName="Django server">
-      <module name="my-django" />
+    <configuration name="djangoProject" type="Python.DjangoServer" factoryName="Django server">
+      <module name="djangoProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -57,13 +54,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8f1ecfe7-2272-4317-8836-b9cbd06806df" name="Changes" comment="" />
-      <created>1646041661753</created>
+      <changelist id="1136610d-1a84-4313-9e98-b3ac84608b1f" name="Changes" comment="" />
+      <created>1646282427040</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1646041661753</updated>
-      <workItem from="1646041662830" duration="10000" />
-      <workItem from="1646282452585" duration="73000" />
+      <updated>1646282427040</updated>
+      <workItem from="1646282428088" duration="7000" />
     </task>
     <servers />
   </component>
