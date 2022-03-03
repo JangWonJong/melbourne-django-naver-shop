@@ -105,36 +105,23 @@ class Quiz07RandomChoice(object):
 class Quiz08Rps(object):
     def __init__(self, user):
         self.user = user
-        self.com = myRandom(1,3)
+        self.com = myRandom(0,2)
 
     def game(self):
         c = self.com
         u = self.user
+        r = u-c
         # 1 가위 2 바위 3 보
         rps = ['가위', '바위', '보']
-        if u == 1:
-            if c == 1:
-                res = f'플레이어: {rps[0]} 컴퓨터: {rps[0]}, 결과 무승부'
-            elif c == 2:
-                res = f'플레이어: {rps[0]} 컴퓨터: {rps[1]}, 결과 패배'
-            elif c == 3:
-                res = f'플레이어: {rps[0]} 컴퓨터: {rps[2]}, 결과 승리'
-        if u == 2:
-            if c == 1:
-                res = f'플레이어: {rps[1]} 컴퓨터: {rps[0]}, 결과 승리'
-            elif c == 2:
-                res = f'플레이어: {rps[1]} 컴퓨터: {rps[1]}, 결과 무승부'
-            elif c == 3:
-                res = f'플레이어: {rps[1]} 컴퓨터: {rps[2]}, 결과 패배'
-        if u == 3:
-            if c == 1:
-                res = f'플레이어: {rps[2]} 컴퓨터: {rps[0]}, 결과 패배'
-            elif c == 2:
-                res = f'플레이어: {rps[2]} 컴퓨터: {rps[1]}, 결과 승리'
-            elif c == 3:
-                res = f'플레이어: {rps[2]} 컴퓨터: {rps[2]}, 결과 무승부'
-
+        if r == 0:
+            res = f'플레이어: {rps[u]} ㅣ 컴퓨터: {rps[c]} ☞ 무승부'
+        elif r == -1 or r == 2:
+            res = f'플레이어: {rps[u]} ㅣ 컴퓨터: {rps[c]} ☞ 패배'
+        elif r == 1 or r == -2:
+            res = f'플레이어: {rps[u]} ㅣ 컴퓨터: {rps[c]} ☞ 승리'
         return res
+
+
 
 
 
@@ -144,12 +131,34 @@ class Quiz09GetPrime(object):
         pass
 
 class Quiz10LeapYear(object):
-    def __init__(self):
-        pass
+    def __init__(self, year):
+        self.year = year
+
+    def leapyear(self):
+        a = self.year
+        if a % 4 == 0 and a % 100 == 0 or a % 400 == 0:
+            return '윤년'
+        else:
+            return '평년'
+
 
 class Quiz11NumberGolf(object):
-    def __init__(self):
-        pass
+    def __init__(self, user):
+        self.user = user
+        self.computer = myRandom(1, 100)
+
+    def updown(self):
+        u = self.user
+        c = self.computer
+        while 1:
+            if u == c:
+                    res = f'정답입니다'
+            elif u > c:
+                    res = f'다운'
+            elif c < u:
+                    res = f'업'
+
+            return res
 
 class Quiz12Lotto(object):
     def __init__(self):

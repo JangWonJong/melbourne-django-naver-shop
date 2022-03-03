@@ -1,8 +1,11 @@
-from models import Quiz01Calculator, Quiz02Bmi, Quiz03Grade, Quiz05Dice, Quiz07RandomChoice, Quiz08Rps
+from models import Quiz01Calculator, Quiz02Bmi, Quiz03Grade, Quiz05Dice, Quiz07RandomChoice, Quiz08Rps, Quiz09GetPrime, \
+    Quiz10LeapYear, Quiz11NumberGolf
 from domains import Member
 if __name__ == '__main__':
     while 1:
-        menu = input('0.Exit 1. 계산기 (+, - ,* ,/) 2.BMI 3.성적표 4.? 5.주사위 6.Q5 7.Q6 8.가위바위보')
+        menu = input('0.Exit 1. 계산기 (+, - ,* ,/) 2.BMI 3.성적표 4.? 5.주사위 6.Q5 7.Q6 '
+                     '8.가위바위보 9.소수 10.윤년평년 11. 업다운 12. 로또'
+                     '13. 입출금 14. 구구단')
         if menu == 0:
             break
         elif menu == '1':  # 계산기
@@ -40,5 +43,14 @@ if __name__ == '__main__':
             print(f'당첨 : {q7.chooseMember()}')
 
         elif menu == '8':
-            q8 = Quiz08Rps(int(input('가위바위보')))  # 가위 1 바위 2 보 3
-            print(f'나의 값 : {q8.user} 컴퓨터의 값 : {q8.com} 결과 : {q8.game()}')
+            q8 = Quiz08Rps(int(input('플레이어:')))  # 가위 1 바위 2 보 3
+            print(q8.game())
+        elif menu == '9':
+            q9 = Quiz09GetPrime()
+            print(f'')
+        elif menu == '10':
+            q10 = Quiz10LeapYear(int(input('윤년 평년')))
+            print(f'{q10.year}는 {q10.leapyear()}입니다')
+        elif menu == '11':
+            q11 = Quiz11NumberGolf(int(input('사용자 입력값 : ')))
+            print(q11.updown())
