@@ -10,11 +10,11 @@ if __name__ == '__main__':
                      "30 31 32 33 34 35 36 37 38 39")
         if menu == 0:
             break
-        elif menu == '1':  # 계산기
+        elif menu == '00':  # 계산기
             q1 = Quiz01Calculator(int(input('첫번째 수')), int(input('두번째 수')), input('+, -, *, /'))
             print('*' * 30 + f'\n {q1.num1} {q1.opcode} {q1.num2} = {q1.calc()}\n' + '*' * 30)
 
-        elif menu == '2':  # BMI
+        elif menu == '01':  # BMI
             member = Member()
             q2 = Quiz02Bmi()
             member.name = input('이름 : ')
@@ -23,7 +23,7 @@ if __name__ == '__main__':
             res = q2.bmi(member)
             print('*' * 30 + f'\n이름 : {member.name}, 키 : {member.height}, 몸무게 : {member.weight}, BMI 상태 : {res}\n' + '*' * 30)
 
-        elif menu == '3':  # 성적표
+        elif menu == '02':  # 성적표
             for i in ['김유신', '강감찬', '유관순', '장원종', '스칼라']:
                 print(i)
             q3 = Quiz03Grade((input('이름')), int(input('언어점수')), int(input('영어점수')), int(input('수학점수')))
@@ -35,7 +35,7 @@ if __name__ == '__main__':
                   f' * * 평균: {q3.avg()}\n'
                   f' * * 합격여부: {q3.grade()} \n')
 
-        elif menu == '5':
+        elif menu == '03':
             print(Quiz05Dice.cast())
 
         elif menu == '6':
