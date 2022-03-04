@@ -1,5 +1,6 @@
 from models import Quiz01Calculator, Quiz02Bmi, Quiz03Grade, Quiz05Dice, Quiz07RandomChoice, Quiz08Rps, Quiz09GetPrime, \
     Quiz10LeapYear, Quiz11NumberGolf
+from quiz30 import Quiz30
 from domains import Member
 if __name__ == '__main__':
     while 1:
@@ -54,3 +55,5 @@ if __name__ == '__main__':
         elif menu == '11':
             q11 = Quiz11NumberGolf(int(input('사용자 입력값 : ')))
             print(q11.updown())
+        elif menu == '30':
+            print(Quiz30.quiz30list())
