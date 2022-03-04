@@ -99,8 +99,7 @@ class Quiz07RandomChoice(object):
                         '최민서', '한성수', '김윤섭', '김승현',
                         "강 민", "최건일", "유재혁", "김아름", "장원종"]
     def chooseMember(self):
-        ran = myRandom(0,23)
-        return self.members[ran]
+        return self.members[myRandom(0,23)]
 
 class Quiz08Rps(object):
     def __init__(self, user):
